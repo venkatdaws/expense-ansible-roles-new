@@ -16,7 +16,7 @@
     - name: Start and enable server
       ansible.builtin.service:
         name: mysqld
-        state: installed
+        state: started
         enabled: yes
     - name: install python mysql dependencies
       ansible.builtin.pip:
